@@ -118,7 +118,7 @@ function init() {
   
       // 2. Create the layout for the bubble chart.
       var bubbleLayout = {
-        title: 'Bacteria Count Per Sample',
+        title: 'Because rainbow colors may make it less disgusting?',
         xaxis: {title: "OTU ID"},
         yaxis: {title: "Sample Value"},
         titlefont: {"size": 25},

@@ -113,14 +113,16 @@ function init() {
           color: otuIds,
           colorscale: "Rainbow",
           size: sampleValues,
-      }
+        }
       }];
   
       // 2. Create the layout for the bubble chart.
       var bubbleLayout = {
-        title: 'Bacteria Count Per Sample',
-        xaxis: {title: "OTU ID"},
-        yaxis: {title: "Sample Value"},
+        images: {source: "/resources/bellyclean.png"},
+        title: 'Because rainbow colors may make it less disgusting?',
+        xaxis: {title: "OTU Id's"},
+        yaxis: {title: "Sample Quantity"},
+        grid: "False",
         titlefont: {"size": 25},
         hovermode: "closest",
         height: 450,
@@ -153,7 +155,7 @@ function init() {
       
       // 5. Create the layout for the gauge chart.
       var gaugeLayout = { 
-        title: { text: "Washing Frequency<br>(per week)"},
+        title: {text: "Washing Frequency<br>(per week)"},
         titlefont: {"size": 25},
         width: 450,
         height: 450,
