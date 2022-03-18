@@ -25,11 +25,11 @@ Roza has a partially completed dashboard that she needs to finish. She has a com
     - [belly button sample data](https://github.com/catsdata/BellyButton_Biodiversity/blob/main/samples.json)
     - [starter files](https://github.com/catsdata/BellyButton_Biodiversity/tree/main/resources)
 - Software:  
+    - Javascript
     - Bootstrap
     - Plotly 
-        - this 1.3.5
-        - that 1.20.3
-    - *ADD MORE HERE*    
+    - CSS
+    - HTML    
 
 
 ## Results
@@ -73,7 +73,7 @@ Roza has a partially completed dashboard that she needs to finish. She has a com
     - The webpage has three customizations
     - When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard, and all three charts should be working according to the requirements when a sample is selected from the dropdown menu
 
-![name](imagelink)
+![finalproduct](https://github.com/catsdata/BellyButton_Biodiversity/blob/main/resources/fullimage.png)
 
 ## Summary
 
