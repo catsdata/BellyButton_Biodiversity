@@ -91,7 +91,8 @@ function init() {
 
       // 9. Create the layout for the bar chart. 
       var barLayout = {
-        title: 'Top 10 Bacteria Cultures Found', 
+        title: 'Top 10 Bacteria Cultures Found',
+        titlefont: {"size": 25}, 
       };
 
       // 10. Use Plotly to plot the data with the layout. 
@@ -99,30 +100,30 @@ function init() {
   
     
   // bubble chart
+  // https://code.tutsplus.com/tutorials/create-interactive-charts-using-plotlyjs-bubble-and-dot-charts--cms-29209
+
       // 1. Create the trace for the bubble chart.
       var bubbleData = [{
         type: 'bubble',
         x: otuIds,
         y: sampleValues,
         text: otuLabels,
-
-        // text: ['A<br>size: 40', 'B<br>size: 60', 'C<br>size: 80', 'D<br>size: 100'],
         mode: 'markers',
-
-        //bgcolor: "lightyellow",
         marker: {
+          color: otuIds,
+          colorscale: "Rainbow",
           size: sampleValues,
       }
       }];
   
       // 2. Create the layout for the bubble chart.
       var bubbleLayout = {
-        title: 'Bacteria Cultures Per Sample',
+        title: 'Bacteria Count Per Sample',
         xaxis: {title: "OTU ID"},
         yaxis: {title: "Sample Value"},
         titlefont: {"size": 25},
         hovermode: "closest",
-        height: 500,
+        height: 450,
       };
   
       // 3. Use Plotly to plot the data with the layout.
@@ -131,10 +132,9 @@ function init() {
   // gauge chart
       // 4. Create the trace for the gauge chart.
 
-      let freq = data.metadata.filter(s => s.id == sample)[0].wfreq;
+      var freq = data.metadata.filter(guage => guage.id == sample)[0].wfreq;
 
       var gaugeData = [{
-        title: { text: "Belly Button Washing Frequency<br>Scrubs per Week" },
         type: "indicator",
         mode: "gauge+number",
         gauge: {
@@ -146,14 +146,14 @@ function init() {
             {range:[6,8], color: "lightgreen"},
             {range:[8,10], color: "green"},
           ],        
-          bar: { color: "black"}
+          bar: { color: "royalblue"}
         },
         value: freq
       }];
       
       // 5. Create the layout for the gauge chart.
       var gaugeLayout = { 
-        title: { text: "Belly Button Washing Frequency"},
+        title: { text: "Washing Frequency<br>(per week)"},
         titlefont: {"size": 25},
         width: 450,
         height: 450,
