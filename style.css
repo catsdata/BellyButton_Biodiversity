@@ -1,0 +1,18 @@
+.jumbotron {
+    background-image: url('../resources/bellyclean.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+.jumbotron h1{
+    color: rgb(26, 46, 105);
+    font: bold 50px 'Comic Sans MS', 'cursive';
+    text-align: center;
+}
+
+.jumbotron p{
+    color: rgb(6, 3, 24);
+    text-align: center;
+    font: bold 30px 'Comic Sans MS', 'cursive';
+}
