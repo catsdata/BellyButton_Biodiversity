@@ -26,11 +26,11 @@ Roza has a partially completed dashboard that she needs to finish. She has a com
     - [starter files](https://github.com/catsdata/BellyButton_Biodiversity/tree/main/resources)
 - Software:  
     - Javascript
-    - Bootstrap
-    - Plotly 
+    - HTML
+    - Plotly
     - CSS
-    - HTML    
-
+    - Bootstrap
+    - D3 (js)
 
 ## Results
 
